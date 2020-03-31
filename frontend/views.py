@@ -1,3 +1,6 @@
+
+
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -6,4 +9,5 @@ from django.shortcuts import render
 
 #Note just creating a views.py doestn do anything, need to link url to it
 def index(request):
-    return render(request, 'frontend/index.html')
+     return HttpResponse(render(request, 'frontend/index.html'))
+
